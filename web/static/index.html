@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume Matcher</title>
+    <link rel="stylesheet" href="http://localhost:8000/static/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1>Resume Matcher</h1>
+            <p>Upload your resume and job description to get a detailed match analysis</p>
+        </header>
+
+        <div class="upload-section">
+            <h2>Upload Documents</h2>
+            <form id="matchForm">
+                <div class="form-group">
+                    <label for="resume">Resume (PDF)</label>
+                    <input type="file" id="resume" name="resume" accept=".pdf" required multiple>
+                </div>
+
+                <div class="form-group">
+                    <label for="jdInputType">Job Description Input Type</label>
+                    <select id="jdInputType" name="jdInputType">
+                        <option value="file">Upload File</option>
+                        <option value="text">Paste Text</option>
+                    </select>
+                </div>
+
+                <div class="form-group" id="jdFileGroup">
+                    <label for="jdFile">Job Description (Text File)</label>
+                    <input type="file" id="jdFile" name="jdFile" accept=".txt">
+                </div>
+
+                <div class="form-group" id="jdTextGroup" style="display: none;">
+                    <label for="jdText">Job Description Text</label>
+                    <textarea id="jdText" name="jdText" placeholder="Paste job description here..."></textarea>
+                </div>
+
+                <button type="submit" id="submitButton" class="btn">Analyze Match</button>
+            </form>
+        </div>
+
+        <div id="loading" class="loading">
+            <div class="spinner"></div>
+            <p>Analyzing your resume...</p>
+        </div>
+
+        <div id="error" class="error-message"></div>
+
+        <div id="results" class="results-section">
+            <h2>Match Results</h2>
+            
+            <div class="score-card">
+                <h3>Overall Match Score</h3>
+                <div class="score-value" id="overallScore">0%</div>
+            </div>
+
+            <div class="score-card">
+                <h3>Detailed Scores</h3>
+                <div class="match-details">
+                    <p>Semantic Score: <span id="semanticScore">0%</span></p>
+                    <p>Skill Score: <span id="skillScore">0%</span></p>
+                    <p>Experience Score: <span id="experienceScore">0%</span></p>
+                    <p>Education Score: <span id="educationScore">0%</span></p>
+                    <p>Calculated Experience: <span id="calculatedExperience">0 years</span></p>
+                </div>
+            </div>
+
+            <div class="score-card">
+                <h3>Skill Matches</h3>
+                <div class="match-details">
+                    <h4>Matched Skills</h4>
+                    <ul id="matchedSkills" class="match-list"></ul>
+                    
+                    <h4>Missing Skills</h4>
+                    <ul id="missingSkills" class="match-list"></ul>
+                    
+                    <h4>Semantically Matched Skills</h4>
+                    <ul id="semanticSkills" class="match-list"></ul>
+                </div>
+            </div>
+
+            <div class="score-card">
+                <h3>Education Matches</h3>
+                <div class="match-details">
+                    <h4>Matched Education</h4>
+                    <ul id="matchedEducation" class="match-list"></ul>
+                    
+                    <h4>Missing Education</h4>
+                    <ul id="missingEducation" class="match-list"></ul>
+                </div>
+            </div>
+
+            <div class="score-card">
+                <h3>Experience Matches</h3>
+                <div class="match-details">
+                    <h4>Matched Experience</h4>
+                    <ul id="matchedExperience" class="match-list"></ul>
+                    
+                    <h4>Missing Experience</h4>
+                    <ul id="missingExperience" class="match-list"></ul>
+                </div>
+            </div>
+        </div>
+
+        <div id="resumeDetails" class="results-section">
+            <h2>Resume Details</h2>
+            <div style="margin-bottom: 1rem;">
+                <label for="resumeSelect"><strong>Select Resume:</strong></label>
+                <select id="resumeSelect"></select>
+            </div>
+            <div class="score-card">
+                <h3>Basic Information</h3>
+                <p><strong>Name:</strong> <span id="resumeName"></span></p>
+                <p><strong>Email:</strong> <span id="resumeEmail"></span></p>
+                <p><strong>Phone:</strong> <span id="resumePhone"></span></p>
+                <p><strong>Location:</strong> <span id="resumeLocation"></span></p>
+                <p><strong>Summary:</strong> <span id="resumeSummary"></span></p>
+            </div>
+            <div class="score-card">
+                <h3>Skills</h3>
+                <ul id="resumeSkills" class="match-list"></ul>
+            </div>
+            <div class="score-card">
+                <h3>Work Experience</h3>
+                <ul id="resumeWork" class="match-list"></ul>
+            </div>
+            <div class="score-card">
+                <h3>Education</h3>
+                <ul id="resumeEducation" class="match-list"></ul>
+            </div>
+        </div>
+
+        <div id="jdDetails" class="results-section">
+            <h2>Job Description Details</h2>
+            <div class="score-card">
+                <h3>Job Information</h3>
+                <p><strong>Title:</strong> <span id="jdTitle"></span></p>
+                <p><strong>Required Experience:</strong> <span id="jdRequiredExperience"></span></p>
+                <p><strong>Required Education:</strong> <span id="jdRequiredEducation"></span></p>
+            </div>
+            <div class="score-card">
+                <h3>Required Skills</h3>
+                <ul id="jdRequiredSkills" class="match-list"></ul>
+            </div>
+        </div>
+
+        <div class="feedback-section upload-section">
+            <h2>Provide Feedback</h2>
+            <p>Help us improve by providing feedback on the match results.</p>
+            <form id="feedbackForm">
+                <div class="form-group">
+                    <label for="feedbackText">Your Feedback</label>
+                    <textarea id="feedbackText" name="feedbackText" rows="5" placeholder="Enter your comments here..."></textarea>
+                </div>
+                <button type="submit" id="submitFeedbackBtn" class="btn">Submit Feedback</button>
+            </form>
+            <div id="feedbackMessage" style="margin-top: 1rem;" class="error-message"></div>
+        </div>
+    </div>
+
+    <script src="http://localhost:8000/static/config.js"></script>
+    <script src="http://localhost:8000/static/script.js"></script>
+</body>
+</html> 

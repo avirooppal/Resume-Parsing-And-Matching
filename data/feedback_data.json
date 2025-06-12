@@ -1,0 +1,207 @@
+[
+    {
+        "resume_file_path": "resumes/Ravi_Sharma_Resume.pdf",
+        "job_description": "Title: Java Backend Developer\n\nWe are looking for a skilled backend developer with experience in:\n\n- Java\n- Spring Boot\n- Microservices\n- REST APIs\n- SQL\n- Git\n\nRequirements:\n- Bachelor's degree in Computer Science or related field\n- 3+ years of experience with backend systems\n",
+        "match_results": {
+            "match_percentage": 0.1921122431755066,
+            "details": {
+                "semantic_score": 0.4802806079387665,
+                "skill_score": 0,
+                "matched_skills": [],
+                "missing_skills": [
+                    "React",
+                    "TypeScript",
+                    "JavaScript",
+                    "GraphQL"
+                ],
+                "semantically_matched_skills": [],
+                "experience_score": 0,
+                "education_score": 0,
+                "calculated_resume_experience_years": 0,
+                "weights": {
+                    "semantic": 0.4,
+                    "skills": 0.3,
+                    "experience": 0.2,
+                    "education": 0.1
+                },
+                "parsed_jd": {
+                    "requirements_text": "Title: Java Backend Developer\n\nWe are looking for a skilled backend developer with experience in:\n\n- Java\n- Spring Boot\n- Microservices\n- REST APIs\n- SQL\n- Git\n\nRequirements:\n- Bachelor's degree in Computer Science or related field\n- 3+ years of experience with backend systems\n",
+                    "responsibilities_text": "",
+                    "required_skills": [
+                        "React",
+                        "TypeScript",
+                        "JavaScript",
+                        "GraphQL"
+                    ],
+                    "required_experience_years": 5,
+                    "required_education": "Bachelor's Degree",
+                    "match_text": ""
+                }
+            }
+        }
+    },
+    {
+        "resume_file_path": "resumes/Ravi_Sharma_Resume.pdf",
+        "job_description": "Title: Java Backend Developer\n\nWe are looking for a skilled backend developer with experience in:\n\n- Java\n- Spring Boot\n- Microservices\n- REST APIs\n- SQL\n- Git\n\nRequirements:\n- Bachelor's degree in Computer Science or related field\n- 3+ years of experience with backend systems\n",
+        "match_results": {
+            "match_percentage": 0.1921122431755066,
+            "details": {
+                "semantic_score": 0.4802806079387665,
+                "skill_score": 0,
+                "matched_skills": [],
+                "missing_skills": [
+                    "React",
+                    "TypeScript",
+                    "JavaScript",
+                    "GraphQL"
+                ],
+                "semantically_matched_skills": [],
+                "experience_score": 0,
+                "education_score": 0,
+                "calculated_resume_experience_years": 0,
+                "weights": {
+                    "semantic": 0.4,
+                    "skills": 0.3,
+                    "experience": 0.2,
+                    "education": 0.1
+                },
+                "parsed_jd": {
+                    "requirements_text": "Title: Java Backend Developer\n\nWe are looking for a skilled backend developer with experience in:\n\n- Java\n- Spring Boot\n- Microservices\n- REST APIs\n- SQL\n- Git\n\nRequirements:\n- Bachelor's degree in Computer Science or related field\n- 3+ years of experience with backend systems\n",
+                    "responsibilities_text": "",
+                    "required_skills": [
+                        "React",
+                        "TypeScript",
+                        "JavaScript",
+                        "GraphQL"
+                    ],
+                    "required_experience_years": 5,
+                    "required_education": "Bachelor's Degree",
+                    "match_text": ""
+                }
+            }
+        }
+    },
+    {
+        "resume_file_path": "resumes/Ravi_Sharma_Resume.pdf",
+        "job_description": "Title: Java Backend Developer\n\nWe are looking for a skilled backend developer with experience in:\n\n- Java\n- Spring Boot\n- Microservices\n- REST APIs\n- SQL\n- Git\n\nRequirements:\n- Bachelor's degree in Computer Science or related field\n- 3+ years of experience with backend systems\n",
+        "match_results": {
+            "match_percentage": 0.1921122431755066,
+            "details": {
+                "semantic_score": 0.4802806079387665,
+                "skill_score": 0,
+                "matched_skills": [],
+                "missing_skills": [
+                    "React",
+                    "TypeScript",
+                    "JavaScript",
+                    "GraphQL"
+                ],
+                "semantically_matched_skills": [],
+                "experience_score": 0,
+                "education_score": 0,
+                "calculated_resume_experience_years": 0,
+                "weights": {
+                    "semantic": 0.4,
+                    "skills": 0.3,
+                    "experience": 0.2,
+                    "education": 0.1
+                },
+                "parsed_jd": {
+                    "requirements_text": "Title: Java Backend Developer\n\nWe are looking for a skilled backend developer with experience in:\n\n- Java\n- Spring Boot\n- Microservices\n- REST APIs\n- SQL\n- Git\n\nRequirements:\n- Bachelor's degree in Computer Science or related field\n- 3+ years of experience with backend systems\n",
+                    "responsibilities_text": "",
+                    "required_skills": [
+                        "React",
+                        "TypeScript",
+                        "JavaScript",
+                        "GraphQL"
+                    ],
+                    "required_experience_years": 5,
+                    "required_education": "Bachelor's Degree",
+                    "match_text": ""
+                }
+            }
+        }
+    },
+    {
+        "resume_file_path": "resumes/Ravi_Sharma_Resume.pdf",
+        "job_description": "Title: Java Backend Developer\n\nWe are looking for a skilled backend developer with experience in:\n\n- Java\n- Spring Boot\n- Microservices\n- REST APIs\n- SQL\n- Git\n\nRequirements:\n- Bachelor's degree in Computer Science or related field\n- 3+ years of experience with backend systems\n",
+        "match_results": {
+            "match_percentage": 0.1921122431755066,
+            "details": {
+                "semantic_score": 0.4802806079387665,
+                "skill_score": 0,
+                "matched_skills": [],
+                "missing_skills": [
+                    "React",
+                    "TypeScript",
+                    "JavaScript",
+                    "GraphQL"
+                ],
+                "semantically_matched_skills": [],
+                "experience_score": 0,
+                "education_score": 0,
+                "calculated_resume_experience_years": 0,
+                "weights": {
+                    "semantic": 0.4,
+                    "skills": 0.3,
+                    "experience": 0.2,
+                    "education": 0.1
+                },
+                "parsed_jd": {
+                    "requirements_text": "Title: Java Backend Developer\n\nWe are looking for a skilled backend developer with experience in:\n\n- Java\n- Spring Boot\n- Microservices\n- REST APIs\n- SQL\n- Git\n\nRequirements:\n- Bachelor's degree in Computer Science or related field\n- 3+ years of experience with backend systems\n",
+                    "responsibilities_text": "",
+                    "required_skills": [
+                        "React",
+                        "TypeScript",
+                        "JavaScript",
+                        "GraphQL"
+                    ],
+                    "required_experience_years": 5,
+                    "required_education": "Bachelor's Degree",
+                    "match_text": ""
+                }
+            }
+        }
+    },
+    {
+        "resume_file_path": "resumes/Ravi_Sharma_Resume.pdf",
+        "job_description": "Title: Java Backend Developer\n\nWe are looking for a skilled backend developer with experience in:\n\n- Java\n- Spring Boot\n- Microservices\n- REST APIs\n- SQL\n- Git\n\nRequirements:\n- Bachelor's degree in Computer Science or related field\n- 3+ years of experience with backend systems\n",
+        "match_results": {
+            "match_percentage": 0.1921122431755066,
+            "details": {
+                "semantic_score": 0.4802806079387665,
+                "skill_score": 0,
+                "matched_skills": [],
+                "missing_skills": [
+                    "React",
+                    "TypeScript",
+                    "JavaScript",
+                    "GraphQL"
+                ],
+                "semantically_matched_skills": [],
+                "experience_score": 0,
+                "education_score": 0,
+                "calculated_resume_experience_years": 0,
+                "weights": {
+                    "semantic": 0.4,
+                    "skills": 0.3,
+                    "experience": 0.2,
+                    "education": 0.1
+                },
+                "parsed_jd": {
+                    "requirements_text": "Title: Java Backend Developer\n\nWe are looking for a skilled backend developer with experience in:\n\n- Java\n- Spring Boot\n- Microservices\n- REST APIs\n- SQL\n- Git\n\nRequirements:\n- Bachelor's degree in Computer Science or related field\n- 3+ years of experience with backend systems\n",
+                    "responsibilities_text": "",
+                    "required_skills": [
+                        "React",
+                        "TypeScript",
+                        "JavaScript",
+                        "GraphQL"
+                    ],
+                    "required_experience_years": 5,
+                    "required_education": "Bachelor's Degree",
+                    "match_text": ""
+                }
+            }
+        }
+    }
+]

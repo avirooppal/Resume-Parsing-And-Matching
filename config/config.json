@@ -1,0 +1,16 @@
+{
+    "pdf_parsers": ["pdfminer.six", "PyMuPDF"],
+    "ner_model_path": "models/ner_model",
+    "embedding_model_path": "models/embedding_model",
+    "reranking_model_path": "models/reranking_model",
+    "skills_ontology_path": "data/skills_ontology.json",
+    "job_title_mapping_path": "data/job_title_mapping.json",
+    "feedback_data_path": "data/feedback_data.json",
+    "faiss_index_path": "models/faiss_index",
+    "weights": {
+      "semantic": 0.4,
+      "skills": 0.3,
+      "experience": 0.2,
+      "education": 0.1
+    }
+  }
