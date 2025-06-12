@@ -60,7 +60,7 @@ A robust, end-to-end pipeline for parsing resumes and job descriptions, extracti
 
 ### 1. **Clone the Repository**
 ```bash
-git clone https://github.com/yourusername/your-repo-name.git
+git clone https://github.com/avirooppal/resume-match-pipeline.git
 cd your-repo-name
 ````
 
