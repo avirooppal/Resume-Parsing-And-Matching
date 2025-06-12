@@ -61,7 +61,7 @@ A robust, end-to-end pipeline for parsing resumes and job descriptions, extracti
 ### 1. **Clone the Repository**
 ```bash
 git clone https://github.com/avirooppal/resume-match-pipeline.git
-cd your-repo-name
+cd resume-match-pipeline
 ````
 
 ### 2. **(Recommended) Use Docker**
@@ -125,6 +125,3 @@ Open frontend:
   * Add new ML models or scoring logic
   * Customize UI or add filtering/sorting
   * Integrate with ATS or HR tools
-
- know if you’d like me to save this as an actual `.md` file and send it to you!
-```
